@@ -48,4 +48,5 @@ def add_pet_to_stock(pets, new_pet):
 def get_customer_cash(customer_cash_index):
     return customer_cash_index["cash"]
 
-
+def remove_customer_cash(customer, money):
+    customer["cash"] -= money

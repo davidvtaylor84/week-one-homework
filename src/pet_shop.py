@@ -53,3 +53,9 @@ def remove_customer_cash(customer, money):
 
 def get_customer_pet_count(customer_list):
     return sum(customer_list["pets"])
+
+def add_pet_to_customer(customers, number_of_pets):
+    customers.update({"pets": number_of_pets})
+   
+
+

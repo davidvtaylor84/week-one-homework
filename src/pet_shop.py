@@ -1,6 +1,7 @@
 # WRITE YOUR FUNCTIONS HERE
 
 from locale import currency
+from urllib.request import parse_http_list
 
 
 def get_pet_shop_name(shop_name):
@@ -23,23 +24,21 @@ def increase_pets_sold(pets_sold, increase_in_pet_sales):
 def get_stock_count(stock_count):
     return len(stock_count["pets"])
 
-def get_pets_by_breed(number, breed):
-    number = 0
-    for pet in breed:
-        total = len(breed["pets"]["breed"])
-    number += len(breed["pets"]["breed"]) 
-    return number
+def get_pets_by_breed(petshop_name, breed):
+    chosen_breed = []
+    for animal in petshop_name["pets"]:
+        if animal["breed"] == breed:
+            chosen_breed += [animal]
+    return chosen_breed
 
-    # number = []
-    # for breed in pets:
-    #     breed = pets["pets"]["breed"]
-    # number += breed
-    # return number
-    
 
-# def find_no_friends(breed):
-#     no_friend = []
-#     for person in people:
-#         if len(person["friends"])==0:
-#             no_friend+=[person]
-#     return no_friend
+def find_pet_by_name(petshop, pet_name):
+    for animal in petshop["pets"]:
+        if animal["name"] == pet_name:
+            return animal
+
+def remove_pet_by_name(petshop, pet_name):
+    for animal in petshop["pets"]:
+        if animal["name"] == pet_name:
+            petshop["pets"].remove(animal)
+

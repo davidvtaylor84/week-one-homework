@@ -63,6 +63,34 @@ def customer_can_afford_pet(customer_cash, money):
     else:
         return False
 
+# def sell_pet_to_customer(pet_shop, pet, customer):
+#     if customer_can_afford_pet(customer, pet) == True:
+#         remove_pet_by_name(pet_shop, pet)
+#         add_pet_to_customer(customer, pet)
+#         get_customer_cash(customer)
+#         add_or_remove_cash(pet_shop, pet["price"])
+
+        # get_total_cash(pet_shop)
+        # get_customer_cash(customer, pet["price"])
+        # add_or_remove_cash(get_total_cash(pet_shop),pet["price"])
+        # add_pet_to_customer(customer, pet)
+        # remove_pet_by_name(pet)
+        # add_or_remove_cash()
+
+        # increase_pets_sold(get_pets_sold(pet_shop))
+
+        # get_customer_cash(customer), pet["price"]) == True:
+        # remove_pet_by_name(pet)
+        # get_total_cash(add_or_remove_cash(pet_shop))
+        # get_customer_cash(remove_customer_cash(customer))
+        # get_pets_sold(increase_pets_sold(pet_shop))
+        # add_pet_to_customer(customer)
+
+    
+    
+    
+
+
 # def sell_pet_to_customer(total_cash, pet_name, customer_cash):
 #     total_cash[get_total_cash] += pet_name["price"]
 #     customer_cash[remove_customer_cash(pet_name["price"])]

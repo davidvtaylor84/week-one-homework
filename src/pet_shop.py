@@ -64,13 +64,32 @@ def customer_can_afford_pet(customer_cash, money):
         return False
 
 # def sell_pet_to_customer(total_cash, pet_name, customer_cash):
-#     customer_cash["cash"] -= pet_name["price"]
-#     total_cash["admin"]["total_cash"] += pet_name["price"]
-#     shopper = []
-#     for animal in pet_name["pets"]:
-#         if animal["name"] == pet_name:
-#             pet_name["pets"].remove(animal)
-#             shopper["pets"] += animal
+#     total_cash[get_total_cash] += pet_name["price"]
+#     customer_cash[remove_customer_cash(pet_name["price"])]
+#     add_pet_to_customer(remove_pet_by_name)
+
+    # add price of pet to total_cash - get_total_cash(cash)
+    # deduct price of pet from customer - remove_customer_cash(customer, money)
+    # add pet to customer - add_pet_to_customer(shopper, new_pet)
+    # remove pet from pet shop - remove_pet_by_name(petshop, get_name)
+    # total_cash[get_total_cash] += pet_name["price"]
+    # remove_customer_cash(pet_name["price"])
+    # add_pet_to_customer
+    # remove_pet_by_name
+
+    # get_customer_pet_count
+    # get_pets_sold
+    # get_customer_cash
+    # get_total_cash
+    
+
+    # customer_cash["cash"] -= pet_name["price"]
+    # total_cash["admin"]["total_cash"] += pet_name["price"]
+    # shopper = []
+    # for animal in pet_name["pets"]:
+    #     if animal["name"] == pet_name:
+    #         pet_name["pets"].remove(animal)
+    #         shopper["pets"] += animal
  
 
     # pet_price = 0
@@ -78,6 +97,3 @@ def customer_can_afford_pet(customer_cash, money):
     #     pet_price += ["price"]
     # customer_cash["cash"] -= pet_price
     # total_cash["admin"]["total_cash"] += pet_price
-
-
-    
